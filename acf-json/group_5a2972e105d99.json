@@ -68,7 +68,7 @@
             "label": "Info proxecto",
             "name": "info_proxecto",
             "type": "group",
-            "instructions": "",
+            "instructions": "Crec que hem de prioritzar. Mai posar tots els camps en cada client, sinó serà massa informació.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -81,8 +81,8 @@
                 {
                     "key": "field_5a9afc6e108c5",
                     "label": "Estado Proxecto",
-                    "name": "estado_proxecto",
-                    "type": "select",
+                    "name": "ficha_estado_proxecto",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -91,14 +91,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "choices": [],
-                    "default_value": [],
-                    "allow_null": 0,
-                    "multiple": 1,
-                    "ui": 1,
-                    "ajax": 1,
-                    "return_format": "value",
-                    "placeholder": ""
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_5a3d8eb3d29c8",
@@ -140,7 +137,7 @@
                     ],
                     "taxonomy": [],
                     "allow_null": 0,
-                    "multiple": 0,
+                    "multiple": 1,
                     "return_format": "object",
                     "ui": 1
                 },
@@ -151,15 +148,7 @@
                     "type": "text",
                     "instructions": "",
                     "required": 0,
-                    "conditional_logic": [
-                        [
-                            {
-                                "field": "field_5a9afc6e108c5",
-                                "operator": "==",
-                                "value": ""
-                            }
-                        ]
-                    ],
+                    "conditional_logic": 0,
                     "wrapper": {
                         "width": "",
                         "class": "",
@@ -231,7 +220,7 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "",
+            "button_label": "Engadir video",
             "sub_fields": [
                 {
                     "key": "field_5a297433593d0",
@@ -431,5 +420,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1520106770
+    "modified": 1520217113
 }

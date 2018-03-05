@@ -14,12 +14,12 @@
 				        		<p class="presentacion-clientes margin50">{{presentacion}}</p>
 				        	{% endif %}
 							{% for cliente in clientes %}
-							    <h2 class="cliente {{cliente.slug}}">{{cliente.name}}
+							    <h2 class="cliente {{cliente.slug}} destacado">
 							    	{% if cliente.web %}
-							    	<span class="web">
-							    		<a href="{{cliente.web}}" target="_blank">Web</a>
-							    	</span>
-							    	{% endif %}							    	
+							    		<a href="{{cliente.web}}" target="_blank">{{cliente.name}}</a>
+									{% else %}
+										{{cliente.name}}
+									{% endif %}
 							    </h2>
 							{% endfor %}
 						</div>

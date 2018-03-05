@@ -103,6 +103,8 @@ function my_scripts() {
 
 	wp_enqueue_script('cluetip', get_template_directory_uri() . '/assets/js/jquery.cluetip.js', array('jquery'), true);
 
+	wp_enqueue_script('youtubebackground', get_template_directory_uri() . '/assets/js/jquery.youtubebackground.js', array('jquery'), true);
+
 	wp_enqueue_script( 'om-scripts', get_template_directory_uri() . '/assets/js/om_scripts.js', array('jquery'), '1.0.0', true );
 
 

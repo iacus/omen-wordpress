@@ -2,7 +2,7 @@ $(window).resize(function() {
   resizewindow();
 
   var altoventana = window.innerHeight - 150; // New height
-var corrector = 200; // Corrector de altura
+var corrector = 100; // Corrector de altura
 var ancho = window.innerWidth; // New height
 var alto = window.innerHeight - corrector; // New height
 
@@ -33,7 +33,7 @@ function resizewindow(){
   $(".logo svg").attr( "height", alto );
 
   $(".cabecera-proyecto").css( "height", alto + corrector );
-  $(".cabecera").css( "height", alto );
+  $(".cabecera").css( "height", alto + 50 );
   $("#content").css( "padding-top", alto + corrector );
   alturaCabeceraProyecto();
 }
@@ -282,6 +282,8 @@ $(document).ready(function() {
         // your configuration goes here
         scrollDirection: 'vertical',
         effect: 'fadeIn',
+        effectTime: 200,
+        threshold: 0,
         visibleOnly: true,
         onError: function(element) {
             console.log('error loading ' + element.data('src'));
@@ -341,7 +343,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $('.person').cluetip({
+  $('.cluedestacado').cluetip({
     splitTitle: '|', 
     showTitle: false,
   cluetipClass: 'jtip',
@@ -350,11 +352,11 @@ $(document).ready(function() {
   cursor: 'default'
   });
 
-  $('.hola').cluetip({
+  $('.cluedestacado2').cluetip({
     splitTitle: '|', 
     showTitle: false,
   cluetipClass: 'jtip',
-  topOffset: -60, 
+  topOffset: -40, 
   leftOffset: -100,
   cursor: 'default'
   });
@@ -446,6 +448,24 @@ $(document).ready(function() {
 $(document).ready(function(e) {
     $('img[usemap]').rwdImageMaps();
 });
+
+
+$('#reel').YTPlayer({
+    fitToBackground: true,
+    videoId: 'LSmgKRx5pBo'
+});
+
+
+$( ".logo" ).click(
+  function() {
+    
+  
+  }, function() {
+    $("#YTPlayer-ID-1520223840998").attr("src","https://www.youtube.com/embed/LSmgKRx5pBo?iv_load_policy=3&modestbranding=1&autoplay=1&controls=0&showinfo=0&wmode=opaque&branding=0&autohide=0&enablejsapi=1&origin=http%3A%2F%2Fdev-omen%3A8888&widgetid=1")
+  },
+
+);
+
 
 
 

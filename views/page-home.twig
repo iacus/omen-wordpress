@@ -5,7 +5,7 @@
 	{% set imaxe_fondo_home = post.get_field('fondo_home') %}
 
 	<div class="content-wrapper">
-			<article class="cabecera post-type-{{post.post_type}}" style="background-image: url({{imaxe_fondo_home}})" id="reel">
+			<article class="cabecera post-type-{{post.post_type}}" id="reel">
       			<div class="logo">
       				<svg class="svg" viewBox="0 0 870 678">
 			          <g id="logo_outline" onclick="apagaclick();">
@@ -14,7 +14,7 @@
 			          </g>
 			        </svg>
 			    </div>
-				<nav class="navbar sticky-bottom">
+				<nav class="navbar center">
 				    <h3>{{ site.description }}</h3>
 				</nav>
 			</article>
