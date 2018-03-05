@@ -452,9 +452,8 @@ $(document).ready(function(e) {
 
 $('#reel').YTPlayer({
     fitToBackground: true,
-    videoId: 'LSmgKRx5pBo'
+    videoId: '247807354'
 });
-
 
 $( ".logo" ).click(
   function() {
